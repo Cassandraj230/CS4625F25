@@ -1,3 +1,9 @@
+<!--CS4625 Assignment 1-->
+<!--Cassandra Jensen-->
+<!--Credit: https://www.w3schools.com/css/tryit.asp?filename=trycss_mediaqueries_website -->
+<!--Credit: https://validator.schema.org/ and https://schema.org/Person-->
+
+
 <!doctype html>
 <html lang="en">
 
@@ -24,7 +30,7 @@
 
     .navbar {
       display: flex;
-      background-color: #333;
+      background-color: #000000;
     }
 
     .navbar a {
@@ -34,11 +40,6 @@
       text-align: center;
     }
 
-    .navbar a:hover {
-      background-color: #ddd;
-      color: black;
-    }
-
     .row {
       display: flex;
       flex-wrap: wrap;
@@ -46,7 +47,7 @@
 
     .side {
       flex: 20%;
-      background-color: #f1f1f1;
+      background-color: #d8dcda;
       padding: 20px;
     }
 
@@ -60,7 +61,8 @@
     footer {
       padding: 20px;
       text-align: center;
-      background: #ddd;
+      background: #000000;
+      color: white;
     }
 
     @media screen and (max-width: 700px) {
@@ -131,7 +133,7 @@
         <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
           <span itemprop="streetAddress">123 Palouse Ave</span>,
           <span itemprop="addressLocality">Moscow</span>,
-          <span itemprop="addressRegion">ID</span>
+          <span itemprop="addressRegion">ID</span>,
           <span itemprop="postalCode">83843</span>,
           <span itemprop="addressCountry">US</span>
         </address>
@@ -220,35 +222,35 @@
 
         <br>
         <section itemscope itemtype="https://schema.org/Event">
-        <h2 itemprop="name">CJ Crochet Farmers Market</h2>
-        <p>
-          <time itemprop="startDate" datetime="2025-11-15T10:00">Nov 15, 2025, 10:00 AM</time> –
-          <time itemprop="endDate" datetime="2025-11-15T16:00">4:00 PM</time>
-        </p>
+          <h2 itemprop="name">CJ Crochet Farmers Market</h2>
+          <p>
+            <time itemprop="startDate" datetime="2025-11-15T10:00">Nov 15, 2025, 10:00 AM</time> –
+            <time itemprop="endDate" datetime="2025-11-15T16:00">4:00 PM</time>
+          </p>
 
-        <meta itemprop="eventAttendanceMode" content="https://schema.org/OfflineEventAttendanceMode" />
+          <meta itemprop="eventAttendanceMode" content="https://schema.org/OfflineEventAttendanceMode" />
 
-        <div itemprop="location" itemscope itemtype="https://schema.org/Place">
-          <span itemprop="name">Friendship Square</span>
-          <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-            <span itemprop="streetAddress">Main St & 4th</span>,
-            <span itemprop="addressLocality">Moscow</span>,
-            <span itemprop="addressRegion">ID</span>
-            <span itemprop="postalCode">83843</span>
+          <div itemprop="location" itemscope itemtype="https://schema.org/Place">
+            <span itemprop="name">Friendship Square</span>
+            <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+              <span itemprop="streetAddress">Main St & 4th</span>,
+              <span itemprop="addressLocality">Moscow</span>,
+              <span itemprop="addressRegion">ID</span>
+              <span itemprop="postalCode">83843</span>
+            </div>
           </div>
-        </div>
 
-        <div itemprop="organizer" itemscope itemtype="https://schema.org/Organization">
-          <span itemprop="name">CJ Crochet</span>
-          <link itemprop="url" href="https://cjcrochet.example/" />
-        </div>
+          <div itemprop="organizer" itemscope itemtype="https://schema.org/Organization">
+            <span itemprop="name">CJ Crochet</span>
+            <link itemprop="url" href="https://cjcrochet.example/" />
+          </div>
 
-        <p itemprop="description">Ill have accessories, household items, and more!</p>
-        <a itemprop="url" href="https://yourdomain.example/events/cj-crochet-pop-up">Event details</a>
-        <p>!this is not actually an event just for assignment!</p>
+          <p itemprop="description">Ill have accessories, household items, and more!</p>
+          <a itemprop="url" href="https://yourdomain.example/events/cj-crochet-pop-up">Event details</a>
+          <p>!this is not actually an event just for assignment!</p>
         </section>
         <br>
-        
+
         <section itemscope itemtype="https://schema.org/Product">
           <h2 itemprop="name">Sample Product</h2>
           <h3 itemprop="name">Granny Square bag</h3>
@@ -269,7 +271,7 @@
         <h2>My Pets: Vo and Raisin</h2>
 
         <img class="centered" itemprop="image" src="IMG_2845.jpg" alt="Gallery image 1" width="250" height="150">
-        
+
       </div>
     </div>
   </main>
@@ -277,10 +279,6 @@
   <footer>
     © <span id="year"></span> Casey Jensen
   </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 
 </html>
