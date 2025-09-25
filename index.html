@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Casey Jensen - Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+
+<main itemscope itemtype="https://schema.org/Person">
+
+  <!-- Identity -->
+  <header>
+    <img src="https://example.com/casey.jpg" alt="Portrait of Casey Jensen" itemprop="image" width="160" height="160" />
+    <h1 itemprop="name">Casey Jensen</h1>
+    <p><span itemprop="jobTitle">Software Engineer</span> at
+      <span itemprop="worksFor" itemscope itemtype="https://schema.org/Organization">
+        <a itemprop="url" href="https://example.com"><span itemprop="name">Acme Robotics</span></a>
+      </span>
+    </p>
+    <link itemprop="url" href="https://example.com/casey" />
+  </header>
+
+  <!-- Summary / Bio -->
+  <section aria-labelledby="about">
+    <h2 id="about">About</h2>
+    <p itemprop="description">
+      Robotics-focused engineer building control systems and compilers. Crochet enthusiast and weekend motorcyclist.
+    </p>
+    <meta itemprop="knowsAbout" content="Compilers" />
+    <meta itemprop="knowsAbout" content="Embedded systems" />
+    <meta itemprop="knowsLanguage" content="en" />
+  </section>
+
+  <!-- Contact -->
+  <section aria-labelledby="contact">
+    <h2 id="contact">Contact</h2>
+    <p>Email: <a href="mailto:casey@example.com" itemprop="email">casey@example.com</a></p>
+    <p>Phone: <a href="tel:+12065551234" itemprop="telephone">+1 (206) 555-1234</a></p>
+
+    <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <span itemprop="addressLocality">Moscow</span>,
+      <span itemprop="addressRegion">ID</span>,
+      <span itemprop="addressCountry">US</span>
+    </address>
+  </section>
+
+  <!-- Education / Alumni -->
+  <section aria-labelledby="education">
+    <h2 id="education">Education</h2>
+    <p>Alumnus of
+      <span itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
+        <span itemprop="name">University of Idaho</span>
+      </span>
+    </p>
+  </section>
+
+  <!-- Links (sameAs) -->
+  <section aria-labelledby="links">
+    <h2 id="links">Links</h2>
+    <ul>
+      <li><a itemprop="sameAs" href="https://github.com/casey">GitHub</a></li>
+      <li><a itemprop="sameAs" href="https://www.linkedin.com/in/casey">LinkedIn</a></li>
+      <li><a itemprop="sameAs" href="https://twitter.com/casey">Twitter</a></li>
+    </ul>
+  </section>
+
+  <!-- Optional metadata -->
+  <meta itemprop="identifier" content="employee-12345" />
+  <meta itemprop="birthDate" content="2002-04-18" />
+  <!-- Omit or customize sensitive fields as you prefer -->
+</main>
+
+</body>
+</html>
